@@ -1,0 +1,22 @@
+https://[companyName].atlassian.net:443/rest/api/latest/issue
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Content-Type: application/json
+Authorization: Basic [base64 encoding of "username:password" without quotes]
+---
+{
+    "fields": {
+       "project":
+       { 
+          "key": "TES"
+       },
+       "summary": "<%:IssueName%>",
+       "description": "<%:IssueBackground%>",
+       "issuetype": {
+          "id": "2" //ID of the type of issue. Others can be used. This is just for test.
+       }
+   }
+}
+//this version will trigger debug mode through the file name.

@@ -1,0 +1,17 @@
+https://[companyname].campfirenow.com/room/[roomNum]/speak
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+X-Prototype-Version: 1.7
+Content-Type: application/x-www-form-urlencoded;
+charset=UTF-8
+Cookie: [Intercept a campfire POST to the /speak URL and use your own cookies.]
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+---
+//Line 1 is the post destination.
+//Line 2 is the scope URL.
+//Lines until the --- are all headers formatted raw and delineated with a ": " without quotes.
+//need to add maybe a param that allows for unique messages.
+message=<%Url%>: <%IssueBackground%>%20-%20<%IssueDetail%>&kind=text&t=1389764722630&now=1389764722630&attempt=1
